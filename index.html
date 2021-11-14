@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,500&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="img/computer.png">
+  <title>ToDo List</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+
+      <section class="top-content">
+        <a class="logo-link" href="https://github.com/Dobrowydka" target="_blank">
+          <img class="logo" src="img/logo.png" alt="Логотип">
+        </a>
+        <header>
+          <h1>ToDo List</h1>
+        </header>
+        <button class="add" onclick="openPopup()">
+          Добавить задачу
+        </button>
+      </section>
+
+      <section class="tasks">
+        <ul></ul>
+      </section>
+
+    </div>
+
+    <div class="popup">
+      <div class="popup-content">
+        <span onclick="closePopup()" class="close">&times;</span>
+        <h1>Введите данные</h1>
+        <input type="text" placeholder="Что сделать?" class="popup-task">
+        <input type="text" placeholder="Когда сделать?" class="popup-date">
+        <input type="text" placeholder="Примечание" class="popup-description">
+        <button onclick="" class="add-item">
+          Добавить
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
